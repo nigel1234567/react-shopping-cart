@@ -12,14 +12,14 @@ const Header = () => {
             <div className="navbar-menu">
                 <a className="navbar-brand" href={process.env.PUBLIC_URL}>
                     <img
-                        className="navbar-item site-navbar-item"
+                        className="navbar-item site-navbar-item logo"
                         src={logo}
                         alt="logo"
                         width="80"
                         height="80"
                         />
                     <h5 className="navbar-item site-navbar-item company-name">
-                        Roger's Devil Fruits
+                        Blackbeard's Devil Fruits
                     </h5>
                 </a>
                 <div className="navbar-end site-navbar-end">

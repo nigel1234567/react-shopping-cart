@@ -9,14 +9,16 @@ import 'bulma/css/bulma.min.css';
 const RouteSwitch = () => {
     return (
         <BrowserRouter>
-            <Header/>
-            <Routes>
-                <Route path="/" element={<App/>} />
-                <Route path="/home" element={<App/>} />
-                <Route path="/about" element={<About/>} />
-                <Route path="/shop" element={<Shop/>} />
-            </Routes>
-            <Footer/>
+            <div className="main">
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<App/>} />
+                    <Route path="/home" element={<App/>} />
+                    <Route path="/about" element={<About/>} />
+                    <Route path="/shop" element={<Shop/>} />
+                </Routes>
+                <Footer/>
+            </div>
         </BrowserRouter>
     )
 }
