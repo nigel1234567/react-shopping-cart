@@ -156,3 +156,161 @@ footer.end {
     }
 }
 
+.dropdown-trigger {
+    border: 3px solid var(--text-2);
+    background-color: var(--text-3);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-1);
+}
+
+.dropdown-trigger:hover {
+    background-color: white;
+    border-color: grey;
+    cursor: pointer;
+ }
+  
+  .dropdown-menu {
+    border: 1px solid #888;
+    background-color: #f2f2f2;
+    z-index: 1;
+    width: 400px;
+  }
+  
+  .shopping-cart-item {
+    height: 70px;
+  
+    padding: 5px 8px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .shopping-cart-item:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .shopping-cart-item-image {
+    padding: 3px;
+  
+    border: 2px solid #404040;
+    border-radius: 5px;
+  }
+  
+  .item-info,
+  .dropdown-subtotal {
+    width: 180px;
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .item-info {
+    margin: 12px auto;
+  
+    justify-content: space-between;
+  }
+  
+  .item-name,
+  .item-price,
+  .item-frequency,
+  .dropdown-subtotal {
+    font-size: 12px;
+  }
+  
+  .item-name {
+    font-weight: 700;
+    flex: 1;
+  }
+  
+  .item-price,
+  .dropdown-subtotal-amount {
+    width: 80px;
+    text-align: left;
+  }
+  
+  .item-frequency {
+    width: 20px;
+  }
+  
+  .item-delete {
+    height: 18px;
+    width: 18px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-weight: 700;
+    font-size: 11px;
+  
+    border: 2px solid #de673f;
+    background-color: #f0baa8;
+    color: #993a1a;
+  
+    cursor: pointer;
+  }
+  
+  .item-delete:hover {
+    background-color: #e17551;
+  }
+  
+  .dropdown-divider {
+    width: 93%;
+  
+    margin: 10px auto;
+  
+    background-color: #ccc;
+  }
+  
+  .dropdown-subtotal {
+    margin: 10px;
+    margin-left: auto;
+  
+    justify-content: flex-end;
+  }
+  
+  .dropdown-subtotal-text,
+  .dropdown-checkout {
+    font-weight: 700;
+    color: #4d8316;
+  }
+  
+  .dropdown-subtotal-text {
+    margin-right: 10px;
+  
+    font-size: 14px;
+  }
+  
+  .dropdown-subtotal-amount {
+    margin-right: 0;
+  }
+  
+  .dropdown-checkout {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+    height: 30px;
+    width: 60%;
+  }
+  
+  .empty-cart {
+    width: 200px;
+    height: 80px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-bottom: 4px;
+  
+    font-size: 20px;
+    font-weight: 700;
+  }
+  

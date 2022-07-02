@@ -2,7 +2,7 @@
 
 export const productData = [
     {
-        itemItd: 0,
+        itemId: 0,
         category: "logia",
         name: "Mera Mera no Mi",
         image: require('./assets/img/mera.png'),
@@ -11,7 +11,7 @@ export const productData = [
     },
 
     {
-        itemItd: 1,
+        itemId: 1,
         category: "logia",
         name: "Suna Suna no Mi",
         image: require('./assets/img/suna.png'),
@@ -20,7 +20,7 @@ export const productData = [
     },
 
     {
-        itemItd: 2,
+        itemId: 2,
         category: "logia",
         name: "Moku Moku no Mi",
         image: require('./assets/img/moku.png'),
@@ -29,7 +29,7 @@ export const productData = [
     },
 
     {
-        itemItd: 3,
+        itemId: 3,
         category: "zoan",
         name: "Ushi Ushi no Mi, Model: Giraffe",
         image: require('./assets/img/ushi.png'),
@@ -38,7 +38,7 @@ export const productData = [
     },
 
     {
-        itemItd: 4,
+        itemId: 4,
         category: "zoan",
         name: "Sara Sara no Mi, Model: Axolotl",
         image: require('./assets/img/sara.png'),
@@ -47,7 +47,7 @@ export const productData = [
     },
 
     {
-        itemItd: 5,
+        itemId: 5,
         category: "zoan",
         name: "Hebi Hebi no Mi, Model: Yamata no Orochi",
         image: require('./assets/img/hebi.png'),
@@ -56,7 +56,7 @@ export const productData = [
     },
 
     {
-        itemItd: 6,
+        itemId: 6,
         category: "paramecia",
         name: "Bara Bara no Mi",
         image: require('./assets/img/bara.png'),
@@ -65,7 +65,7 @@ export const productData = [
     },
 
     {
-        itemItd: 7,
+        itemId: 7,
         category: "paramecia",
         name: "Doru Doru no Mi",
         image: require('./assets/img/doru.png'),

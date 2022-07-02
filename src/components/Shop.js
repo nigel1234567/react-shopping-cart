@@ -3,7 +3,7 @@ import { useStateIfMounted } from "use-state-if-mounted";
 import { Routes, Route, NavLink, useLocation } from "react-router-dom";
 import { NotificationManager, NotificationContainer } from 'react-notifications';
 
-// import ShoppingCart from "./ShoppingCart";
+import ShoppingCart from "./ShoppingCart";
 import Products from "./Products";
 
 const Shop = () => {
@@ -66,7 +66,6 @@ const Shop = () => {
     return (
         <div className="content">
             <h1 className="shop-title">Devil Fruit Shop</h1>
-            <NotificationContainer/>
             <nav className={`navbar shop-nav ${isSticky && "sticky"}`}>
                 <div className="navbar-menu">
                     <NavLink
@@ -88,6 +87,14 @@ const Shop = () => {
                     })}
                 </div>
             </nav>
+            <ShoppingCart
+                contents={cartContents}
+                className={"navbar-item"}
+                deleteItem={deleteItem}
+                itemWasDeleted={itemWasDeleted}
+                isSticky={isSticky}
+            />
+            <NotificationContainer/>
             <Routes>
                     {allCategories.map((category, index) => {
                         return (
