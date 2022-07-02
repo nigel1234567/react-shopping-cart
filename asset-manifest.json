@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-shopping-cart/static/css/main.413edf4b.css",
+    "main.js": "/react-shopping-cart/static/js/main.d7c332f2.js",
+    "static/media/hebi.png": "/react-shopping-cart/static/media/hebi.d5cbe18e4649b151b130.png",
+    "static/media/ushi.png": "/react-shopping-cart/static/media/ushi.e92927d8f2c246c91684.png",
+    "static/media/suna.png": "/react-shopping-cart/static/media/suna.11fb320c51a2d27d1bc9.png",
+    "static/media/mera.png": "/react-shopping-cart/static/media/mera.2bd5a606f415260a80eb.png",
+    "static/media/jiki.png": "/react-shopping-cart/static/media/jiki.962c9f9f2b22d94d39c1.png",
+    "static/media/sara.png": "/react-shopping-cart/static/media/sara.3d6eba73b2f29a120f7d.png",
+    "static/media/doru.png": "/react-shopping-cart/static/media/doru.a739c7192e3b62d100a9.png",
+    "static/media/moku.png": "/react-shopping-cart/static/media/moku.b5c6c83bc70bb168268a.png",
+    "static/media/logo.png": "/react-shopping-cart/static/media/logo.257dd549e89b5a02dcdc.png",
+    "static/media/devon.png": "/react-shopping-cart/static/media/devon.d516a723ab63064cb1c8.png",
+    "static/media/blackbeard.png": "/react-shopping-cart/static/media/blackbeard.615cd933e4c8a63cc02f.png",
+    "static/media/bara.png": "/react-shopping-cart/static/media/bara.f74b37537d38a53983ee.png",
+    "static/media/burgess.png": "/react-shopping-cart/static/media/burgess.4cdf2d3515d9af3459d1.png",
+    "index.html": "/react-shopping-cart/index.html",
+    "main.413edf4b.css.map": "/react-shopping-cart/static/css/main.413edf4b.css.map",
+    "main.d7c332f2.js.map": "/react-shopping-cart/static/js/main.d7c332f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.413edf4b.css",
+    "static/js/main.d7c332f2.js"
+  ]
+}
