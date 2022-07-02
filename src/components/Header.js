@@ -25,28 +25,22 @@ const Header = () => {
                 <div className="navbar-end site-navbar-end">
                     {/* Home button */}
                     <NavLink
-                        exact 
                         to="/" 
                         className="navbar item site-navbar-item"
-                        activeClassName="site-navbar-selected"
                     >
                     Home
                     </NavLink>
                     {/* About button */}
                     <NavLink
-                        exact 
                         to="/about" 
                         className="navbar item site-navbar-item"
-                        activeClassName="site-navbar-selected"
                     >
                     About
                     </NavLink>
                     {/* Shop button */}
                     <NavLink
-                        exact 
                         to="/shop" 
                         className="navbar item site-navbar-item"
-                        activeClassName="site-navbar-selected"
                     >
                     Shop
                     </NavLink>

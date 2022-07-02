@@ -1,10 +1,6 @@
 import React from "react";
 
-const Product = ({ itemId, category, name, price, description, addToCart }) => {
-
-    function pictureFinder() {
-        return 
-    }
+const Product = ({ itemId, image, category, name, price, description, addToCart }) => {
 
     function addItemsToCart() {
         let qty = document.getElementById(`qty-${itemId}`).value;
@@ -21,11 +17,11 @@ const Product = ({ itemId, category, name, price, description, addToCart }) => {
     return (
         <div className="card product">
             <div className="card-image">
-                <img src={name} alt={name}></img>
+                <img src={image} alt={name}></img>
             </div>
             <div className="card-content">
-                <p className="title">{name}</p>
-                <p className="subtitle">{price} B</p>
+                <p className="name">{name}</p>
+                <p className="price">{price} B</p>
                 <p className="description">{description}</p>
             </div>
             <footer className="card-footer">
@@ -49,3 +45,5 @@ const Product = ({ itemId, category, name, price, description, addToCart }) => {
         </div>
     )
 }
+
+export default Product

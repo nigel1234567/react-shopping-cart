@@ -45,6 +45,10 @@
   font-size: 24px;
 }
 
+.navbar-item {
+  color: white;
+}
+
 h1 {
   font-size: 36px;
   font-weight: bold;
