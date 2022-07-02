@@ -7,17 +7,27 @@ import Footer from  "./components/Footer"
 import 'bulma/css/bulma.min.css';
 
 const RouteSwitch = () => {
+    function itemLocator(id) {}
+
     return (
         <BrowserRouter>
-            <div className="main">
-                <Header/>
-                <Routes>
-                    <Route path="/" element={<App/>} />
-                    <Route path="/home" element={<App/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/shop" element={<Shop/>} />
-                </Routes>
-                <Footer/>
+            <div className="body">
+                <div className="main">
+                    <Header/>
+                    <Routes>
+                        <Route path="/" element={<App/>} />
+                        <Route path="/home"
+                            element={<App/>}
+                        />
+                        <Route path="/about"
+                            element={<About/>}
+                        />
+                        <Route path="/shop/*"
+                            element={<Shop/>}
+                        />
+                    </Routes>
+                    <Footer/>
+                </div>
             </div>
         </BrowserRouter>
     )

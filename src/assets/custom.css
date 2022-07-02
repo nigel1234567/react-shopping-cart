@@ -1,13 +1,22 @@
 :root {
   --text-1: rgb(48, 15, 85);
   --text-2: rgb(87, 26, 156);
+  --text-3: rgb(190, 178, 204);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5e3ff;
 }
 
 .main {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -15,8 +24,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f5e3ff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar {
@@ -45,12 +59,32 @@
   font-size: 24px;
 }
 
+.shop-nav {
+  width: 100%;
+  background-color: var(--text-1);
+}
+
+.shop-nav .navbar-menu {
+  gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar-item {
   color: white;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 36px;
+  padding-top: 20px;
   font-weight: bold;
   color: var(--text-1);
 }
@@ -66,10 +100,11 @@ a {
   transition: all 0.1s ease;
 }
 
-footer {
+footer.end {
   background-color: #67518a;
   color: white;
   height: 2.5rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,10 +115,11 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
+  bottom: 0px;
+  position: fixed;
 }
 
 .content {
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +128,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+  padding-bottom: 100px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -130,5 +167,49 @@ footer {
 
 .content .info .picture {
   border-radius: 24px;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 120px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products .card {
+  width: 300px;
+}
+
+.products .card .card-image {
+  width: 300px;
+  height: 300px;
+}
+
+.products .card .card-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.products .card .card-content {
+  height: 200px;
+}
+
+.products .card .add-to-cart {
+  color: var(--text-1);
+}
+
+.products .card .add-to-cart:hover {
+  background-color: var(--text-3);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 /*# sourceMappingURL=custom.css.map */

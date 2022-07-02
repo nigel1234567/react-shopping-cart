@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-    <footer>
+    <footer className="end">
         <p>&copy; <a href='https://github.com/nigel1234567' target='_blank' rel="noreferrer">nigel1234567</a></p>
     </footer>
     )

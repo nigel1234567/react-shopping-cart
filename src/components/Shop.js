@@ -65,12 +65,12 @@ const Shop = () => {
 
     return (
         <div className="content">
-            <h1>Shop</h1>
+            <h1 className="shop-title">Devil Fruit Shop</h1>
             <NotificationContainer/>
             <nav className={`navbar shop-nav ${isSticky && "sticky"}`}>
                 <div className="navbar-menu">
                     <NavLink
-                    to={match.pathname}
+                    to='.'
                     className="navbar-item"
                     >
                         All Products
@@ -79,7 +79,7 @@ const Shop = () => {
                         return (
                             <NavLink
                                 key={index}
-                                to={`${match.pathname}/c/${category}`}
+                                to={`./c/${category}`}
                                 className="navbar-item"
                             >
                                 {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -91,14 +91,14 @@ const Shop = () => {
             <Routes>
                     {allCategories.map((category, index) => {
                         return (
-                            <Route path={`${match.pathname}/c/${category}`} 
+                            <Route path={`/c/${category}`} 
                                 key={index} 
                                 element={<Products category={category} addToCart={addToCart} />}
                             >
                             </Route>
                         );
                     })}
-                    <Route path={match.pathname}
+                    <Route path='/'
                         element={<Products category={"all"} addToCart={addToCart} />}
                     >
                     </Route>
